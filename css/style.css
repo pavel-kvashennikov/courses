@@ -25,16 +25,51 @@
     font-weight: bold;
     font-style: normal;
 }
+
 nav{
-    margin: 30px;
+    margin: 0;
 }
-.nav_item{
+.navbar{
     background: #007bff;
     text-align: center;
-    padding: 10px 0px 10px 0px;
     color:white;
+    padding: 0;
+}
+.head{
+    margin: 0;
+    padding:0;
 }
 .text-logo{
     font-family: Geometria-bold;
     color: #005cbf;
+}
+.nav-item{
+    padding: 20px 20px 20px 20px;
+    color:white;
+}
+.nav-item:hover{
+    background: #343a40;
+}
+.sidebar{
+    margin: 0 0 0 0;
+    background: #c3e6cb;
+}
+ul{
+    padding:0px;
+    margin: 20px 20px 20px 20px;
+}
+.sidebar-header{
+    padding: 20px 20px 20px 20px;
+    background: #007bff;
+    text-align: center;
+    color:white;
+    margin: 0 0 0 0;
+}
+ol.breadcrumb{
+    padding:0;
+    background: none;
+}
+.footer{
+    margin:30px;
+    text-align: center;
 }
