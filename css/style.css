@@ -8,7 +8,7 @@
     font-style: normal;
 }
 @font-face{
-    font-family: 'Geometria';
+    font-family: 'Geometria Italic';
     src: url('../fonts/Geometria-Italic.eot');
     src: url('../fonts/Geometria-Italic.eot?iefix') format('eot'),
     url('../fonts/Geometria-Italic.woff') format('woff'),
@@ -17,13 +17,18 @@
     font-style: italic;
 }
 @font-face{
-    font-family: 'Geometria';
+    font-family: 'Geometria 900';
     src: url('../fonts/Geometria-Bold.eot');
     src: url('../fonts/Geometria-Bold.eot?iefix') format('eot'),
     url('../fonts/Geometria-Bold.woff') format('woff'),
     url('../fonts/Geometria-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+}
+
+.callback{
+    border: 2px solid blue;
+    padding: 10px 10px 10px 10px;
 }
 
 nav{
@@ -40,7 +45,7 @@ nav{
     padding:0;
 }
 .text-logo{
-    font-family: Geometria-bold;
+    font: bold 16px "Geometria 900";
     color: #005cbf;
 }
 .nav-item{
@@ -72,4 +77,7 @@ ol.breadcrumb{
 .footer{
     margin:30px;
     text-align: center;
+}
+#brands{
+    justify-content: center;
 }
