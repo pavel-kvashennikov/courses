@@ -30,7 +30,10 @@
     border: 2px solid blue;
     padding: 10px 10px 10px 10px;
 }
-
+.callback:hover{
+    background:#343a40;
+    border:0px;
+}
 nav{
     margin: 0;
 }
@@ -80,4 +83,9 @@ ol.breadcrumb{
 }
 #brands{
     justify-content: center;
+}
+a.icon1::before{
+    content:"";
+    background: url(../img/icon1.png);
+    position: ;
 }
