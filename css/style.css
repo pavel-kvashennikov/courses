@@ -44,11 +44,12 @@ nav{
     padding: 0;
 }
 .head{
+    font: bold 24px "Geometria";
     margin: 0;
     padding:0;
 }
 .text-logo{
-    font: bold 16px "Geometria 900";
+    font: bold 14px "Geometria 900";
     color: #005cbf;
 }
 .nav-item{
@@ -84,8 +85,8 @@ ol.breadcrumb{
 #brands{
     justify-content: center;
 }
-a.icon1::before{
-    content:"";
-    background: url(../img/icon1.png);
-    position: ;
+.side-item{
+    margin:20px 20px 20px 20px;
+    font: bold 14px "Geometria";
+    color:
 }
