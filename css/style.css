@@ -62,7 +62,7 @@
     font-size: 20px;
     width: 100px;
     padding-left:0px;
-    margin-left: 70px;
+
 }
   
 .name2 span{
@@ -84,7 +84,7 @@
 }
 .email span::before{
     content: "";
-    background: url(../img/mail.PNG);
+    background: url(../img/mail.png);
     position: absolute;
     width: 20px;
     height: 15px;
@@ -98,14 +98,12 @@
     position: relative;
     display: flex;
     justify-content: left;
-    align-items: left;
-
     width: 225px;
     margin-left: 70px;
 }
 .outline {
     border: 1px solid blue;
-    padding:8px;
+    padding:15px 10px 10px 10px;
 }
 
 .outline:hover{
@@ -208,7 +206,7 @@ ol.breadcrumb{
     font: bold 13px "Geometria";
     color: rgb(48, 48, 48);
     vertical-align: center;
-    text-align: justifyAll;
+
 }
 
 .menu-footer {
@@ -243,6 +241,7 @@ ol.breadcrumb{
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
+  margin-top: 45px;
   height: 100px;
   width: 100px;
   background-size: 100%, 100%;
@@ -252,13 +251,95 @@ ol.breadcrumb{
 
 .carousel-control-next-icon:after
 {
-  content: '>';
-  font-size: 55px;
-  color: red;
+  content: '►';
+  font-size: 40px;
+  color: black;
 }
 
 .carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: red;
-}  
+  content: '◄';
+  font-size: 40px;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+
+    .text-logo span{
+        margin: 25px 0px;
+        font-family: 'Geometria-Heavy';
+        font-size: 32px;
+        color: #04569f;
+        position: relative;
+    }
+    .adress{
+        font-family: 'Geometria-Bold';
+        font-size: 16px;
+        color: #012646;
+        position: relative;
+    }
+    .number span{
+        font-family: 'Geometria-ExtraBold';
+        position: relative;
+        color: rgb(1, 38, 70);
+        font-size: 20px;
+        width: 100px;
+        padding-left:0px;
+
+    }
+
+    .name2 span{
+        font-family: 'Geometria';
+        font-size: 13px;
+        color: #000000;
+        position: relative;
+        line-height: 5px;
+    }
+    .email span{
+        font-family: 'Geometria-Bold';
+        font-size: 16px;
+        color: #012646;
+        position: relative;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        margin-top: -5px;
+    }
+    .callback span{
+        font-family: 'Geometria-Medium';
+        font-size: 13px;
+        color: #012646;
+        position: relative;
+        display: flex;
+        justify-content: left;
+        width: 225px;
+        margin-left: 70px;
+    }
+    .outline {
+        border: 1px solid blue;
+        padding:15px 10px 10px 10px;
+    }
+
+    .outline:hover{
+        background-color: rgb(56, 135, 207);
+        color:white;
+    }
+    .callback span{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .number{
+        text-align: left!important;
+    }
+}
