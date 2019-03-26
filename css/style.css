@@ -152,7 +152,7 @@
 
 .navbar-nav{
     display: -ms-flexbox;
-    display: table;
+    display: inline-block!important;
     -ms-flex-direction: column;
     flex-direction: column;
     padding-left: 0;
@@ -160,11 +160,7 @@
     list-style: none;
     width:100%;
 }
-.navbar-nav > li {
-    float:none;
-    display:table-cell;
-    text-align:center;
-}
+
 
 .menu.navbar.navbar-expand-lg.navbar-dark{
     margin:15px 15px;
@@ -179,6 +175,11 @@
 
 .nav-item a:hover{
     background-color: rgb(56, 135, 207);
+}
+
+.land-img{
+    margin-bottom: 30px;
+    max-width: 100%;
 }
 
 
