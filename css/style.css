@@ -172,7 +172,9 @@
     margin:15px 15px;
     padding: 0px;
 }
-
+.navbar.navbar-expand-sm.navbar-dark.menu{
+    margin:40px 15px 0px 15px;
+}
 
 .collapse.navbar-collapse li{
     display: table-cell;
