@@ -152,13 +152,19 @@
 
 .navbar-nav{
     display: -ms-flexbox;
-    display: inline-block!important;
+    display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
     width:100%;
+}
+.navbar-nav > li {
+    list-style-type: none;
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
 }
 
 
@@ -308,6 +314,9 @@ ol.breadcrumb{
 
 
 @media (min-width: 0) and (max-width: 768px){
+    #header{
+        padding:0px;
+    }
     .information{
         padding-top:15px;
     }
@@ -315,13 +324,13 @@ ol.breadcrumb{
     .text-logo span{
         margin: 25px 0px;
         font-family: 'Geometria-Heavy';
-        font-size: 32px;
+        font-size: 24px;
         color: #04569f;
         position: relative;
     }
     .adress{
         font-family: 'Geometria-Bold';
-        font-size: 16px;
+        font-size: 12px;
         color: #012646;
         position: relative;
     }
@@ -399,5 +408,6 @@ ol.breadcrumb{
 
     .menu{
         margin-top: 20px;
+        margin-bottom: 10px;
     }
 }
