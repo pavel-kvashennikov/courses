@@ -410,4 +410,7 @@ ol.breadcrumb{
         margin-top: 20px;
         margin-bottom: 10px;
     }
+    .menu-footer{
+        display: none;
+    }
 }
