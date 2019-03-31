@@ -59,12 +59,16 @@
     font-family: 'Geometria-ExtraBold';
     position: relative;
     color: rgb(1, 38, 70);
-    font-size: 20px;
-    width: 100px;
-    padding-left:0px;
-
+    font-size: 22px;  
+    width:200px;  
+    font-weight: bold;
+    display: flex;
+    margin-left:auto;
 }
-  
+
+.name2 {
+    margin-top:8px;
+}
 .name2 span{
     font-family: 'Geometria';
     font-size: 13px;
@@ -91,6 +95,9 @@
     left: -42px;
     top: 0px;
 }
+.callback{
+    padding-left: 10px;
+}
 .callback span{
     font-family: 'Geometria-Medium';
     font-size: 13px;
@@ -98,12 +105,12 @@
     position: relative;
     display: flex;
     justify-content: left;
-    width: 225px;
-    margin-left: 70px;
+    width: 200px;
+    margin-left: auto;
 }
 .outline {
     border: 1px solid blue;
-    padding:15px 10px 10px 10px;
+    padding:6px 10px 6px 11px;
 }
 
 .outline:hover{
@@ -141,7 +148,7 @@
    width: 100%; height: 100%;
    text-align:center;
    color:white;
-   line-height: 50px; /* для того чтобы отцентрировать текст по вертикали */
+   line-height: 60px; /* для того чтобы отцентрировать текст по вертикали */
 }
 
 
@@ -172,9 +179,6 @@
     margin:15px 15px;
     padding: 0px;
 }
-.navbar.navbar-expand-sm.navbar-dark.menu{
-    margin:40px 15px 0px 15px;
-}
 
 .collapse.navbar-collapse li{
     display: table-cell;
@@ -189,7 +193,12 @@
     margin-bottom: 30px;
     max-width: 100%;
 }
-
+.callbackmob{
+    display: none;
+}
+.sidebar-mobile{
+    display:none;
+}
 
 
 
@@ -206,12 +215,16 @@
         font-size: 22px;
         text-align: center;
         padding:22px 0px;
-        font-family: "Geometria";
+        font-family: "Geometria-Bold";
         color: rgb(255, 255, 255);   
         background-color: rgb(4, 86, 159);
 }  
 .about{
     color: rgb(4, 86, 159);
+    font-size: 35px;
+    font-family: "Geometria-Bold";
+    color: rgb(4, 86, 159);
+    font-weight: bold;
 }
 .sidemenu{
     padding: 10px 0px 10px 0px;
@@ -221,6 +234,17 @@
     margin:0px;
     color: rgb(4, 86, 159);
     font-weight: bold;
+
+}
+.breadcrumb-item.active{
+    font-size: 15px;
+    font-family: "Geometria";
+    color: rgb(71, 71, 71);
+}
+.breadcrumb-item{
+    font-size: 15px;
+    font-family: "Geometria-Bold";
+    color: rgb(4, 86, 159);
 }
 ol.breadcrumb{
     padding:0;
@@ -235,23 +259,38 @@ ol.breadcrumb{
     padding:18px 0px;
     background-color: rgb(4, 86, 159);
     color:white;
-    text-align: center;
+    text-align:center;
     font-weight: bold;
 }  
 
-#brands{
-    justify-content: center;
+.brand a{
+    font-family: "Geometria";
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    padding-left: 52px;
 }
+
 .side-item{
     margin:15px 15px 15px 15px;
-    font: bold 13px "Geometria";
+    font: bold 13px "Geometria-Bold";
     color: rgb(48, 48, 48);
     vertical-align: center;
 
 }
 
+.offright{
+    padding-left:40px;
+
+}
+.offleft{
+    padding-right:0px;
+}
+.padding-off{
+    padding-left:0px;
+}
 .menu-footer {
-    margin: 70px 15px 0px 15px;
+    margin: 40px 15px 0px 15px;
     text-align: center;
     background-color: none;
     position: relative; display: table;
@@ -303,7 +342,12 @@ ol.breadcrumb{
   color: black;
 }
 
-
+.container{
+    padding:0;
+}
+.burger{
+    padding-right:0px;
+}
 
 
 
@@ -349,10 +393,12 @@ ol.breadcrumb{
         font-family: 'Geometria-ExtraBold';
         position: relative;
         color: rgb(1, 38, 70);
-        font-size: 20px;
-        width: 100px;
+        font-size: 16px;
+        width: 150px;
         padding-left:0px;
-
+        text-align: left;
+        margin-right:auto;
+        margin-left:0;
     }
 
     .name2 span{
@@ -390,6 +436,15 @@ ol.breadcrumb{
         justify-content: left;
         width: 225px;
         margin-left: 70px;
+        display:none;
+    }
+    .callbackmob{
+        position: fixed;
+        display:block;
+        bottom:20px;
+        right: 20px;
+        width:60px;
+        height: 60px;
     }
     .outline {
         border: 1px solid blue;
@@ -414,5 +469,49 @@ ol.breadcrumb{
     }
     .menu-footer{
         display: none;
+    }
+    .padding-off{
+        padding:0px 15px;
+    }
+    .brand a{
+        padding-left:0px;
+        text-align: center;
+    }
+    .brand{
+        margin:0px 15px 0px 15px;
+    }
+    .offleft{
+        padding-left:0;
+    }
+    .sidebar{
+        display:none;
+    }
+    .sidebar-mobile{
+        display:table;
+    }
+    .burger{
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+    .land-img{
+        margin: 0px;
+    }
+}
+
+
+
+
+@media (min-width: 769) and (max-width: 1139px) {
+    .sidebar-mobile{
+        display:none;
+    }
+    .callback{
+        padding-left: 18px;
+    }
+    .number{
+        padding-left:18px;
+    }
+    .brand{
+        padding-left: 0px;
     }
 }
